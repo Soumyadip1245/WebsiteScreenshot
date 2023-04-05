@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 10%;
+    position: relative;
+    height: 100vh;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: black;
+}
+
+button {
+    padding: 8px 25px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.custom-shape-divider-bottom-1680597068 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1680597068 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1680597068 .shape-fill {
+    fill: #FFFFFF;
+}
+
+main {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field input {
+    width: 500px;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+.input-field label {
+    position: absolute;
+    top: 25%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border: 2px solid white;
+}
+
+input:focus~label,
+input:valid~label {
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: white;
+    color: black;
+}
+
+.input-class {
+    justify-content: center;
+    /* background-color: teal; */
+
+}
+
+
+.typing-demo {
+    width: 14ch;
+    animation: typing 2s steps(22), blink .5s step-end alternate infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    animation-delay: 2s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 14ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+
+.btnn {
+    border-radius: 4px;
+}
+
+.image-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    /* background-color: white; */
+}
+
+.image-card img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.btnflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .input-field input {
+        width: 100%;
+    }
+
+    .input-class {
+        display: block;
+    }
+}
