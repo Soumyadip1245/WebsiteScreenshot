@@ -86,7 +86,14 @@ const Website = () => {
                     </div>
                 </main>
             </section>
+            <footer>
+                <hr />
+                <div className="footermain">
+                    <h2>Soumyadip Das</h2>
+                    <p className="footercopyright">All Right Reserved &copy; 2022</p>
 
+                </div>
+            </footer >
         </>
     )
 }
